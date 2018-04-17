@@ -1,7 +1,7 @@
 package com.gedcom.util;
 
 /**
- * The class holds all the constants used in the application .
+ * The class holds all the constants used in the application.
  * @author NGUDAPAT
  * @version 1.0
  * 

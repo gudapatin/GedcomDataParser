@@ -33,7 +33,7 @@ public class GedcomXMLTransformer implements IGedcomTransformer {
 	@Override
 	public void convert(String outputFilePath, Node rootNode) throws GedcomDataParserException {
 
-		logger.log(Level.INFO, "begin of the xml transformer class.");
+		logger.log(Level.INFO, "Processing strated in xml transformer class.");
 		XMLStreamWriter xmlWriter = null;
 
 		try {

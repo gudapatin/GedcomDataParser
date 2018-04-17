@@ -10,8 +10,7 @@ import com.gedcom.exception.GedcomDataParserException;
  * 
  */
 public interface IGedcomTransformer {
-
-    /**
+	/**
      * transforms input file to required format
      * 
      * @param rootNode                 
