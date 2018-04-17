@@ -1,4 +1,4 @@
-package com.gedcom.parser;
+package com.gedcom.entity;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +9,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
 
-import com.gedcom.entity.Node;
 import com.gedcom.parser.GedcomTreeNode;
 
 /**

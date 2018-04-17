@@ -9,9 +9,9 @@ import com.gedcom.exception.GedcomDataParserException;
  * @version 1.0
  * 
  */
-public interface GedcomInputProcessor {    
+public interface IGedcomInputProcessor {    
 	
-    /** Parses the input file
+   /** Parses the input file
      * @param file
      * @return Node
      * @throws GedcomParserException

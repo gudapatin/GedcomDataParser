@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * An entity class to hold data which is in gedcom format.
+ * An entity class to hold user input data .
  * @author NGUDAPAT
  * @version 1.0
  * 

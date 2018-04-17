@@ -11,7 +11,7 @@ import org.junit.Test;
  * @author NGUDAPAT
  * @version 1.0
  * 
- */
+ */ 
 public class NodeTest {
 	   @Test
 	    public void testNodeCreator() {
