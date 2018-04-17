@@ -29,7 +29,7 @@ public class GedcomParserTreeStrategy implements IGedcomParserStrategy {
             	GedcomCommonUtil.getTransformer().convert(outputFilePath, treeNode);
             }
         } catch (GedcomDataParserException e) {
-            logger.log(Level.SEVERE, "Conversion didn't happen due to error.");
+            logger.log(Level.SEVERE, "\n \n****Incorrect input file.Please check the path and format of input file.Conversion failed.*****\n");
         }
         logger.log(Level.INFO, "Gedcom Data parsing completed.");
     }

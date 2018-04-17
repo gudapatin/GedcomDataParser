@@ -6,7 +6,10 @@
   <name>GedcomDataParser</name>
   <description>Challenge is to develop a simple parser that can convert a GEDCOM
 file to XML.</description>
-       <build>
+	   <properties>
+	   	 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	   </properties>      
+	   <build>
        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -20,6 +23,7 @@ file to XML.</description>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
                 <configuration>
                     <excludes>
                         <exclude>**/config.properties</exclude>
@@ -44,10 +48,12 @@ file to XML.</description>
 		   <configuration>
 		    <mainClass>com.gedcom.parser.MainGedcomDataParserApp</mainClass>
 		  </configuration>
+		  <version>1.6.0</version>
 		</plugin>
             </plugins>
             </build>
-               <dependencies>   
+            
+      <dependencies>   
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

@@ -22,11 +22,11 @@ public class MainGedcomDataParserApp {
 	
 	 public static void main(String[] args) {
 		 
-         System.out.println("Usage: java GEDCOMToXMLApp <GEDCOMInputFilename.txt> <XMLOutputFilename.xml>");
-	 
 		 if(args.length == 2){
 			 inputTextFile = args[0];
 			 outputXMLFile = args[1];
+			 logger.info(String.format("Input TXT File: %s  %n Output File: %s",
+					 getAbsoluteFilePath(inputTextFile), getAbsoluteFilePath(outputXMLFile)));
 			}
 			else if(args.length == 1){		
 				inputTextFile = args[0];
@@ -35,14 +35,13 @@ public class MainGedcomDataParserApp {
 			}
 			else {
 				 File file = new File(inputTextFile);
-				 System.out.println(" file.getAbsolutePath()"+ file.getAbsolutePath());
-				 
+				 logger.info(String.format("Input TXT File: %s  %n Output File: %s",
+						 getAbsoluteFilePath(inputTextFile), getAbsoluteFilePath(outputXMLFile))); 
 			}
-		 
+	 
 		 GedcomParser gsf = new GedcomParser();
 		 gsf.parse(inputTextFile, outputXMLFile,GedcomConstants.PARSER_TYPE);
-		 System.out.println(String.format("Input TXT File %s is parsed %n the output XML  created is %s",
-		 getAbsoluteFilePath(inputTextFile), getAbsoluteFilePath(outputXMLFile)));
+	
 	        
 
 	 }	 

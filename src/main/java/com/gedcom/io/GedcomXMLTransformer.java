@@ -16,9 +16,9 @@ import com.gedcom.exception.GedcomDataParserException;
 import com.gedcom.util.GedcomConstants;
 import com.gedcom.util.GedcomXmlUtility;
 
- 
 /**
  * The class produces XML for the tree data.
+ * 
  * @author NGUDAPAT
  * @version 1.0
  * 
@@ -27,13 +27,16 @@ public class GedcomXMLTransformer implements IGedcomTransformer {
 
 	private static final Logger logger = Logger.getLogger(GedcomXMLTransformer.class.getSimpleName());
 
-	/* (non-Javadoc)
-	 * @see com.gedcom.io.GedcomTransformer#convert(java.lang.String, com.gedcom.entity.Node)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.gedcom.io.GedcomTransformer#convert(java.lang.String,
+	 * com.gedcom.entity.Node)
 	 */
 	@Override
 	public void convert(String outputFilePath, Node rootNode) throws GedcomDataParserException {
 
-		logger.log(Level.INFO, "Processing strated in xml transformer class.");
+		logger.log(Level.INFO, "Processing started in xml transformer class.\n");
 		XMLStreamWriter xmlWriter = null;
 
 		try {
@@ -47,7 +50,7 @@ public class GedcomXMLTransformer implements IGedcomTransformer {
 			xmlWriter.writeEndDocument();
 			xmlWriter.flush();
 
-			logger.log(Level.INFO, "XML conversion process completed.");
+			logger.log(Level.INFO, "\n SUCCESS!!!! XML conversion of Gedcom Data completed.\n");
 		} catch (IOException e) {
 			throw new GedcomDataParserException(GedcomConstants.OUTPUT_FILE_CONVERSION_ERROR);
 		} catch (XMLStreamException e) {

@@ -4,7 +4,7 @@ import com.gedcom.entity.Node;
 import com.gedcom.exception.GedcomDataParserException;
 
 /**
- * The class helps the user .
+ * Class used to populate the tree structure of given gedcom data .
  * @author NGUDAPAT
  * @version 1.0
  * 
