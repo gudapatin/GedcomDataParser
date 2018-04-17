@@ -50,12 +50,15 @@ TESTCASE EXECUTION :
 1. Method  One:(Executable jar)
 	Step1: Go to the target directory after the build.
 	Step2 : Giving both input and output file
-	 java -jar GedcomDataParser-0.0.1-SNAPSHOT.jar <<input file>> <<outputfile>>
+	 java -jar GedcomDataParser-0.0.1-SNAPSHOT.jar inputfilewithpath outfilewithpath
+
 	Example:java -jar GedcomDataParser-0.0.1-SNAPSHOT.jar c:\acconexworkspace\GedcomDataParser\GedcomDataInput.txt c:\acconexworkspace\GedcomDataParser\output.xml
+
 2. Method  Two:(Running maven execute)	
 	Step1:To be executed from the source directory.
 	Step2 : Giving both input and output file
-	 java -jar GedcomDataParser-0.0.1-SNAPSHOT.jar <<input file>> <<outputfile>>
+	mvn exec:java -Dexec.mainClass -Dexec.args="inputfilewithpath outputfilewithpath"
+
 	Example:mvn exec:java -Dexec.mainClass -Dexec.args="c:\acconexworkspace\GedcomDataParser\GedcomDataInput.txt c:\acconexworkspace\GedcomDataParser\output.xml
 
 ##Assumptions and Known issues
